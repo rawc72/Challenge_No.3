@@ -1,34 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Password Generator</title>
     <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
+    <!--This part of the code sets the stage for the interaction between the user and the Select Criteria button
+    which has been added. The intention is to ask the User to respond to a series of question that set the criteria
+  for the password to be generated.-->
+    <dialog id="criteriaConfig">
+        <form method="dialog">
+            <div class="item">
+                <label for="length">Select password length(8 - 128)</label>
+                <input type="number" id="length" name="pLen" min="8" max="128">
+            </div>
+            <div class="item">
+                <label for="lowercase">Password should have lowercase?</label>
+                <input type="checkbox" id="lowercase" name="lowercase" value="lower">
+            </div>
+            <div class="item">
+                <label for="uppercase">Password should have uppercase?</label>
+                <input type="checkbox" id="uppercase" name="uppercase" value="upper">
+            </div>
+            <div class="item">
+                <label for="numeric">Password should have numeric?</label>
+                <input type="checkbox" id="numeric" name="numeric" value="numerci">
+            </div>
+            <div class="item">
+                <label for="special">Password should have special characters?</label>
+                <input type="checkbox" id="special" name="special" value="special">
+            </div>
+            <div class="errorDiv">
+                <label id="errorText" class="error"></label>
+            </div>
+            <div class="submit">
+                <input type="submit" id="criteriaSubmit" value="submit" class="smallbtn">
+            </div>
+        </form>
+    </dialog>
+</head>
+
+<body>
     <div class="wrapper">
-      <header>
-        <h1>Password Generator</h1>
-      </header>
-      <div class="card">
-        <div class="card-header">
-          <h2>Generate a Password</h2>
+        <header>
+            <h1>Password Generator</h1>
+        </header>
+        <div class="card">
+            <div class="card-header">
+                <h2>Generate a Password</h2>
+            </div>
+            <div class="card-body">
+                <textarea readonly id="password" placeholder="Your Secure Password" aria-label="Generated Password"></textarea>
+            </div>
+            <div class="card-footer">
+                <!--I have added a second button called "Select Criteria", and I have disabled the "Generate Password" until the criteria 
+            is selected to make it more intuative for the user to first select the criteria and then generate the password.-->
+                <buttton id="generate" class="btn">Select Criteria</buttton>
+                <button id="generate" class="btn" disabled>Generate Password</button>
+            </div>
         </div>
-        <div class="card-body">
-          <textarea
-            readonly
-            id="password"
-            placeholder="Your Secure Password"
-            aria-label="Generated Password"
-          ></textarea>
-        </div>
-        <div class="card-footer">
-          <button id="generate" class="btn">Generate Password</button>
-        </div>
-      </div>
     </div>
     <script src="script.js"></script>
-  </body>
+</body>
+
 </html>
