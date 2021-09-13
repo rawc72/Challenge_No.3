@@ -13,30 +13,30 @@
     <dialog id="criteriaConfig">
         <form method="dialog">
             <div class="item">
-                <label for="length">Select password length(8 - 128)</label>
+                <label for="length">Select password length(8 - 128):</label>
                 <input type="number" id="length" name="pLen" min="8" max="128">
             </div>
             <div class="item">
-                <label for="lowercase">Password should have lowercase?</label>
+                <label for="lowercase">Password should have lower case?: </label>
                 <input type="checkbox" id="lowercase" name="lowercase" value="lower">
             </div>
             <div class="item">
-                <label for="uppercase">Password should have uppercase?</label>
+                <label for="uppercase">Password should have upper case?: </label>
                 <input type="checkbox" id="uppercase" name="uppercase" value="upper">
             </div>
             <div class="item">
-                <label for="numeric">Password should have numeric?</label>
-                <input type="checkbox" id="numeric" name="numeric" value="numerci">
+                <label for="numeric">Password should have numeric?: </label>
+                <input type="checkbox" id="numeric" name="numeric" value="numeric">
             </div>
             <div class="item">
-                <label for="special">Password should have special characters?</label>
+                <label for="special">Password should have special character?: </label>
                 <input type="checkbox" id="special" name="special" value="special">
             </div>
             <div class="errorDiv">
-                <label id="errorText" class="error"></label>
+                <label id='errorText' class="error"></label>
             </div>
             <div class="submit">
-                <input type="submit" id="criteriaSubmit" value="submit" class="smallbtn">
+                <input type="submit" id="criteriaSubmit" value="Submit" class="smallbtn">
             </div>
         </form>
     </dialog>
@@ -57,7 +57,7 @@
             <div class="card-footer">
                 <!--I have added a second button called "Select Criteria", and I have disabled the "Generate Password" until the criteria 
             is selected to make it more intuative for the user to first select the criteria and then generate the password.-->
-                <buttton id="generate" class="btn">Select Criteria</buttton>
+                <button id="select_criteria" class="btn">Select Criteria</button>
                 <button id="generate" class="btn" disabled>Generate Password</button>
             </div>
         </div>

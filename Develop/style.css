@@ -117,32 +117,10 @@ button[disabled] {
     overflow: hidden;
 }
 
-
-/*This part of the code provides the dialog box that will appear with the criteria selction
-prompt with a design that is alligned with the password generator box.*/
-
-dialog {
-    border: none;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-right: 30px;
-    padding-left: 30px;
-}
-
 .item {
     display: flex;
     width: 350px;
     justify-content: space-between;
-}
-
-.errorDiv {
-    display: flex;
-    justify-content: center;
-    margin-top: 15px;
-}
-
-.error {
-    color: hsl(360, 91%, 36%);
 }
 
 .submit {
@@ -155,21 +133,31 @@ dialog {
     border: none;
     background-color: hsl(360, 91%, 36%);
     border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.1);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px 0px;
     color: hsl(0, 0%, 100%);
     display: inline-block;
     font-size: 16px;
     line-height: 18px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    margin-right: 5px;
-    margin-left: 5px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 20px;
-    padding-left: 20px;
+    margin: 5px 5px 5px 5px;
+    padding: 10px 20px;
     text-align: center;
     cursor: pointer;
+}
+
+.error {
+    color: hsl(360, 91%, 36%);
+    ;
+}
+
+.errorDiv {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+dialog {
+    border: none;
+    padding: 20px 30px;
 }
 
 @media (max-width: 690px) {
