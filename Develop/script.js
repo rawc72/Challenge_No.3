@@ -1,21 +1,14 @@
-//We need to create the interface between the js and css/html files.
-//We use the document.querySelector and the document.getElementById methods to achieve this.
-//We make reference to the #generate element in the html file.
+// Variables are a storer of
 var criteriaBtn = document.querySelector("#select_criteria");
-var generateBtn = document.querySelector("#generate");
-
-//This block of code corresponds to the Select Criteria button and the dialog box that appears.
 var criteriaDialog = document.getElementById('criteriaConfig');
 var criteriaSubmitBtn = document.getElementById('criteriaSubmit');
-
-//Establish the variables associated with the different criteria options for the user.
+var generateBtn = document.querySelector("#generate");
 var cri_length;
 var cri_lower;
 var cri_upper;
 var cri_number;
 var cri_special;
 
-//Establish the constants for each of the predefined variables.
 const lowerChars = "abcdefghijklmnopqrstuvwxyz";
 const upperChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 const numbers = "0123456789";
@@ -161,7 +154,7 @@ function returnRandomString(inString, len) {
 }
 
 
-// Add event listener to the Select Criteria and Generate Password button. 
+// Add event listener to generate button
 criteriaBtn.addEventListener("click", openDialoge);
 criteriaSubmitBtn.addEventListener("click", enableGeneratePassword);
 generateBtn.addEventListener("click", writePassword);
