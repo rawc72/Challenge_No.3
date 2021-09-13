@@ -24,6 +24,5 @@ Once the length and at least one other criteria are selected, the Generate Passw
 https://github.com/rawc72/Challenge_No_3/issues/1#issue-994388351
 
 ## Link to deployed tool:
-
-
+https://rawc72.github.io/Challenge_No_3/
 
