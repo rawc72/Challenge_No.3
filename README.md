@@ -20,6 +20,9 @@ I felt that it would be more intuitive for the user when using the tool to have 
 
 Once the length and at least one other criteria are selected, the Generate Password button will be activated and the password will be produced when click-on. The password will contain the criteria which was selected by the user and will omit any criteria the user did not select when prompted to do so after clicking the Select Criteria button.
 
+## Screen Shot:
+https://github.com/rawc72/Challenge_No_3/issues/1#issue-994388351 
+
 ## Link to deployed tool:
 
 
