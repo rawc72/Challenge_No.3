@@ -22,7 +22,6 @@ const upperChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 const numbers = "0123456789";
 const specialChars = "!#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
 
-
 // Write password to the #password input
 function openDialoge() {
     if (typeof criteriaDialog.showModal === "function") {
